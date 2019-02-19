@@ -1,0 +1,101 @@
+
+.searchbox {
+  --border-radius: 20px;
+  --initial-height: 30px;
+
+  --base-color: var(--clr-superlight);
+
+  --top-padding: 5px;
+  --bottom-padding: 5px;
+  --left-padding: var(--border-radius);
+  --right-padding: var(--border-radius);
+
+  background-color: var(--base-color);
+
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+
+  -webkit-box-shadow: 0 0 4px 4px var(--clr-clear);
+  -moz-box-shadow: 0 0 4px 4px var(--clr-clear);
+  box-shadow: 0 0 4px 4px var(--clr-clear);
+
+  padding: var(--top-padding) var(--right-padding) var(--bottom-padding) var(--left-padding);
+}
+
+.search-box {
+  --min-width: 200px;
+  --max-width: 500px;
+
+  --min-height: 30px;
+  --max-height: 100px;
+
+  --border-radius: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  background-color: var(--clr-superlight);
+
+  min-width: var(--min-width);
+  width: auto;
+  max-width: var(--max-width);
+
+  min-height: var(--min-height);
+  height: auto;
+  max-height: var(--max-height);
+
+  padding: 5px var(--border-radius);
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
+}
+
+.search-box-content {
+  min-width: calc(var(--min-width) - (var(--border-radius) * 2));
+  max-width: calc(var(--max-width) - (var(--border-radius) * 2));
+
+  min-height: var(--min-height);
+
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+
+  line-height: var(--min-height);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+  overflow: hidden;
+}
+
+.editable {
+  height: var(--min-height);
+
+  padding-left: 5px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  flex: 1 1 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  line-height: var(--min-height);
+}
