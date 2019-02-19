@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 0;
+  margin: 0;
+
+  overflow: hidden;
+}
+
+app-root {
+  --clr-superlight: #ffffff;
+  --clr-light: #f0f0f0;
+  --clr-clear: #e5e5e5;
+  --clr-normal: #b0b0b0;
+  --clr-dark: #8d8d8d;
+  --clr-superdark: #4d4d4d;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper-all {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.base {
+  background-color: var(--clr-light);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chip {
+  background-color: var(--base-color);
+  color: currentColor;
+
+  padding: 2px 5px;
+
+  margin: 2px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  height: var(--min-height);
+
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.red-chip {
+  --base-color: red;
+  color: white;
+}
+
+.blue-chip {
+  --base-color: darkblue;
+  color: white;
+}
+
+.green-chip {
+  --base-color: green;
+  color: white;
+}
+
+.orange-chip {
+  --base-color: orange;
+  color: white;
+}
+
+
